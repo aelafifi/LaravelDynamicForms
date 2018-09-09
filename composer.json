@@ -1,0 +1,40 @@
+{
+  "name": "elmag/laravel-dynamic-forms",
+  "description": "A Laravel package for dynamic forms management",
+  "keywords": [
+    "laravel",
+    "dynamic",
+    "form"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ahmed S. El-Afifi",
+      "email": "ahmed.s.elafifi@gmail.com",
+      "homepage": "https://github.com/ahmedsalah94"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "5.5.*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "3.5.*",
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ElMag\\": "src/"
+    },
+    "classmap": [
+      "tests"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ElMag\\DynamicForms\\DynamicFormsServiceProvider"
+      ]
+    }
+  }
+}
